@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+// const port = 3000;
 
 // Middleware
 app.use(bodyParser.json());
@@ -43,5 +43,6 @@ app.post('/add-user', async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    // console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server runningg.`);
 });
