@@ -1,7 +1,17 @@
 {
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "A simple Express app with MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "body-parser": "^2.2.0",
     "express": "^5.1.0",
     "mongodb": "^6.15.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
