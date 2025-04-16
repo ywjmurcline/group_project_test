@@ -28,6 +28,7 @@ async function connectDB() {
     }
 }
 connectDB();
+console.log(`after mongo`);
 
 // API endpoint to add user
 app.post('/add-user', async (req, res) => {
@@ -42,8 +43,10 @@ app.post('/add-user', async (req, res) => {
         res.status(500).send('Error adding user');
     }
 });
+console.log(`app`);
 
 const port = process.env.PORT || 3000;
+console.log(`Server running on port ${port}`);
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
