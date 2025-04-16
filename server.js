@@ -42,7 +42,7 @@ app.post('/add-user', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
+app.listen(() => {
     // console.log(`Server running at http://localhost:${port}`);
     console.log(`Server running.`);
 });
