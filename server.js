@@ -11,8 +11,8 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 // MongoDB URI
-// const uri = "mongodb+srv://murcline:Colbert2025@cluster0.phqqrr3.mongodb.net/?appName=Cluster0";
-const uri = process.env.MONGODB_URI;
+const uri = "mongodb+srv://murcline:Colbert2025@cluster0.phqqrr3.mongodb.net/test_db?retryWrites=true&w=majority&appName=Cluster0";
+// const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri);
 let usersCollection;
 
